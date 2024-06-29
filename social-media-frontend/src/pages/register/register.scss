@@ -1,0 +1,142 @@
+
+// Font import
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+// Styles for LinkUp
+
+$link-color: #3b5998; // Facebook blue color, change as needed
+$link-hover-color: darken($link-color, 10%);
+$linkup-color: #ff6f61; // Custom color for LinkUp, change as needed
+
+// Styles for LinkUp
+.linkup {
+  font-family: 'Dancing Script', cursive;
+
+  a {
+    color: $linkup-color; // Change linkup color here
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}
+
+.login {
+  height: 100vh;
+  background-color: #f0efff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    border-radius: 15px;
+    min-height: 600px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+    .left {
+      flex: 1;
+      background: linear-gradient(
+          rgba(35, 10, 90, 0.6),
+          rgba(35, 10, 90, 0.6)
+        ),
+        url("https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg?auto=compress&cs=tinysrgb&w=600")
+          center;
+      background-size: cover;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      color: white;
+      font-family: 'Dancing Script', cursive;
+
+      h1 {
+        font-size: 70px;
+        line-height: 1.1;
+        margin: 0;
+      }
+
+      p {
+        font-size: 30px;
+        line-height: 1.4;
+      }
+
+      span {
+        font-size: 20px;
+      }
+
+      button {
+        width: 55%;
+        padding: 14px;
+        border: none;
+        background-color: white;
+        color: rebeccapurple;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background-color: rebeccapurple;
+          color: white;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      justify-content: center;
+
+      h1 {
+        color: #666;
+        font-size: 34px;
+        margin: 0;
+        font-family:  cursive;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        input {
+          border: none;
+          border-bottom: 2px solid lightgray;
+          padding: 18px 10px;
+          font-size: 15px;
+          transition: border-color 0.3s;
+
+          &:focus {
+            border-color: rebeccapurple;
+            outline: none;
+          }
+        }
+
+        button {
+          width: 55%;
+          padding: 12px;
+          border: none;
+          background-color: #857def;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #7263d1;
+          }
+        }
+      }
+    }
+  }
+}
